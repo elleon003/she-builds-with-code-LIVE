@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+
+<head>
+      <title>She Builds With Code - I Am In Over My Head!</title>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="The online experiment of a web developer in training. Learning to code and sharing all the mistakes!">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- ALL CSS (Edit in settings) -->
+    <link rel="stylesheet" href="https://staging.shebuildswithcode.com/theme/CSS/custom.css" />
+
+	  <!-- FONT AWESOME -->
+	  <script src="https://kit.fontawesome.com/7a5f159d5d.js"></script>
+
+      <link href="https://staging.shebuildswithcode.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="She Builds With Code Full Atom Feed" />
+
+
+    <!-- MATOMO TRACKING -->
+    <script type="text/javascript">
+      var _paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+        var u = "//shebuildswithcode.com/follow/";
+        _paq.push(['setTrackerUrl', u + 'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+
+
+
+
+
+</head>
+
+<body id="index" class="home d-flex flex-column h-100">
+  <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-primary">
+		<a class="navbar-brand" id="top" href="/"><em>She <span class="text-success">Builds</span> With Code</em></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="https://staging.shebuildswithcode.com">Home</a>
+            <a class="nav-item nav-link" href="https://staging.shebuildswithcode.com/about">About</a>
+            <a class="nav-item nav-link" href="https://staging.shebuildswithcode.com/contact-me">Contact Me</a>
+      </div>
+    </div>
+  </nav><!-- /#menu -->
+
+
+<section id="content" class="body">
+  <header>
+    <div class="jumbotron">
+      <h1 class="entry-title display-4">
+      <a href="https://staging.shebuildswithcode.com/blog/i-am-in-over-my-head.html" rel="bookmark"
+        title="Permalink to I Am In Over My Head!">I Am In Over My Head!</a></h1>
+      <p class="lead mb-0">Diving into using a static site generator after using manual static has it's challenges!</p>
+      <em><small class="post-info mt-n2"><time class="published" datetime="2019-07-12 00:00:00-04:00">
+      July 12, 2019
+      </time></small></em>
+    </div>
+  </header>
+
+
+  <div class="entry-content">
+    <div class="container pb-4">
+    <p>I had a bit of an indecisive moment before launching into the next phase of my site. As I had mentioned, I was set on building version 2 of the site with <a href="https://blog.getpelican.com/">Pelican Static Site Generator</a> for a number of reasons:</p>
+<ol>
+<li>It is written in Python, my primary language of choice</li>
+<li>While there are other static site generators written in Python, none had the development or community around it the way Pelican did.</li>
+<li>It uses <a href="http://jinja.pocoo.org/">Jinja</a> templates to render the pages, which is also used by Flask</li>
+<li>I plan to use Flask to build a custom blog in the final version of the site, so Pelican seemed like a good mid step.</li>
+</ol>
+<p>However, I can't ever stop searching for the "right" answer, so I kept digging a little more around the internet for peoples opinions. In a Twitter feed, I think, someone mentioned <a href="https://www.getlektor.com/">Lektor.</a> It's another static site generator built in Python. It was mentioned because it offered an admin panel, similar to a WordPress blog, something that other site generators didn't do.</p>
+<p>My initial thought was "Oh, cool! That will give me the ability to post from my phone!"</p>
+<p><img style="max-height:40rem;" class="img-fluid d-block mx-auto mb-3" src="https://staging.shebuildswithcode.com/images/facepalm-cat.png" alt="Facepalm Cat Meme"></p>
+<p>The admin panel is a locally housed admin panel...cause this is a static site generator that doesn't have a database. The code generates the static pages, then those pages get uploaded.</p>
+<p>Anyway, on closer inspection, I found that Pelican still had the widest use and more features available. So I went back to the original plan.</p>
+<p>I followed the quickstart installation instructions, and they were pretty easy to follow. I set up a second folder in my <a href="https://github.com/elleon003/she-builds-with-code">GitHub</a> repo for the project files, and started to dive in.</p>
+<p>I started reading through the documentation, but found myself following too many rabbit holes. So then I decided I'd start working on a specific goal, like converting my blog posts to Markdown. But I kept getting caught up in how to bring over the styling, which lead me to decide to start building my custom theme instead.</p>
+<p>A note - this is the first time I've ever tried to build something on my own, just using the documentation without any tutorial. And after trying to understand what I was reading for about 5 minutes made me realize that I was in waaaaay over my head.0</p>
+<p>For a second, I really panicked. <em>"Maybe this was a dumb idea. Maybe I'm not good enough yet to try this. Maybe I should take this down and do something else for a bit, gain more experience."</em></p>
+<p>But then I realized, there's really nothing to lose here. Sure, I don't fully understand what I'm doing yet, but that's the beauty of learning!</p>
+<p>This project is mine - it's not for anyone else, no one is expecting this for a grade or as a client. The worst thing that would happen is I break my site and have to fix it. If I want to do this, that kind of thing would happen. Isn't it better that I learn it in a low-stakes situation first?</p>
+<p>So I'm working through it, slowly. And if I don't understand something, I'm going to try what I think and see what happens. And if I'm right or wrong, I'll learn from it. Honestly, I'll retain better if I struggle through something vs. finding the answer in Google. I needed to remind myself that's the whole purpose of this.</p>
+      <div class="category">
+        Category: <a href="https://staging.shebuildswithcode.com/category/web-development.html">Web Development</a>
+      </div>
+  </div><!-- /.entry-content -->
+</section>
+<aside class="mx-auto my-3">
+	<h4 class="text-center">Keep up with the progress! Sign up for updates below.</h4>
+	<!-- Begin Mailchimp Signup Form -->
+  <div id="mc_embed_signup">
+    <form class="form-inline d-flex justify-content-center" action="https://shebuildswithcode.us10.list-manage.com/subscribe/post?u=dd5d34af47663b2b09922e544&amp;id=57d68f5c5b"method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+      novalidate>
+      <div class="form-row id=" mc_embed_signup_scroll">
+        <label class="sr-only" for="mce-FNAME">Name</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="mce-FNAME" value="" name="FNAME"
+          placeholder="First Name">
+        <label class="sr-only" for="mce-EMAIL">Email</label>
+        <input type="email" class="form-control mb-2 mr-sm-2 required email" id="mce-EMAIL" name="EMAIL"
+          placeholder="Email">
+      </div>
+      <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+          name="b_dd5d34af47663b2b09922e544_57d68f5c5b" tabindex="-1" value=""></div>
+      <div class="clear">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+          class="btn btn-success mb-2">
+      </div>
+    </form>
+  </div>
+  <!--End mc_embed_signup-->
+</aside>
+
+  <footer id="contentinfo" class="body footer mt-auto py-2 bg-dark">
+    <div class="container">
+			<p class="m-0 text-center text-white">Copyright &copy; <a href="https://staging.shebuildswithcode.com">She Builds With Code</a> 2019</p>
+			<p class="text-center"><a href="https://www.freeprivacypolicy.com/privacy/view/2efd88d8b85b89da25a70509232a12e3" target="_blank">Privacy Policy</a></p>
+		</div>
+  </footer><!-- /#contentinfo -->
+  <!-- BOOTSTRAP JAVASCRIPT -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<head>
+<title>Contact Me</title>
+</head>
+<body>
+	<header>
+		<div class="jumbotron">
+			<h1 class="display-4">Contact Me!</h1>
+			<hr class="my-4">
+			<p class="lead">Got a question? Suggestion? Just want to say hi? Cool! Fill out the form below.</p>
+		</div>
+	</header>
+	<main class="flex-shrink-0">
+		<div class="container">
+			<div class="form-group">
+				<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+					action="https://formspree.io/noelle@shebuildswithcode.com" method="post">
+					<fieldset id="fs-frm-inputs">
+						<label for="first-name">First Name</label>
+						<input type="text" class="form-control" name="name" id="first-name" placeholder="First Name" required="">
+						<label for="email-address">Email address</label>
+						<input type="email" class="form-control" id="email-address" name="_replyto" placeholder="name@example.com"
+							required="">
+						<label for="message">Message</label>
+						<textarea class="form-control" name="message" id="message" placeholder="What's on your mind?"
+							required=""></textarea>
+						<input type="hidden" name="_subject" id="email-subject" value="New Email!">
+						<input type="submit" class="btn btn-success my-3" value="Send Message" id="contact-button">
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</main>
+</body>
