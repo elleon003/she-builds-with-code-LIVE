@@ -41,7 +41,7 @@ ARTICLE_URL = 'blog/{slug}.html'
 ARTICLE_SAVE_AS = 'blog/{slug}.html'
 PAGE_PATHS = ['pages', 'static-pages']
 STATIC_PATHS = ['images', 'static-pages']
-PAGE_URL = '{slug}'
+PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
 
 # Summary limits for articles and pages
@@ -57,7 +57,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 # Other custom settings
 
 # Switch what is commented out when testing theme
-THEME = "/home/noelle/Dropbox/Linux/Websites/she-builds-with-code/v2_pelican/content/theme/shebuildswithcodetheme"
+THEME = "content/theme/shebuildswithcodetheme"
 CSS_FILE = 'custom.css'
 # THEME = "notmyidea"
 # THEME = "simple"

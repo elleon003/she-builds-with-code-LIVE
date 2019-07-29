@@ -8,9 +8,10 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-FTP_HOST=a2ss44.a2hosting.com
-FTP_USER=thisisatest@staging.shebuildswithcode.com
-FTP_TARGET_DIR=/
+SSH_HOST=a2ss44.a2hosting.com
+SSH_PORT=7822
+SSH_USER=ibeforee
+SSH_TARGET_DIR=/home/ibeforee/shebuildswithcode.com
 
 
 DEBUG ?= 0
@@ -78,6 +79,9 @@ publish:
 
 ftp_upload: publish
 	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(OUTPUTDIR) $(FTP_TARGET_DIR) ; quit"
+
+ssh_upload:
+	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
 
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish ftp_upload
