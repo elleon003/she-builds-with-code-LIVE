@@ -39,8 +39,8 @@ There were a few things that I just had to give up and hack a workaround:
 
 Originally from here, I planned to build a custom CMS using Flask. However, I think I may stay in this format for a while. It's something I want to do, but to be honest it's not my top priority.
 
-My main reason for trying to learn to code is that I have an idea for an app I want to build for myself. It's a budget that works for bi-weekly paychecks. I've seen a lot online, and tried to use them, but I find I'm always stringing a bunch of hacks together to work with it. I've yet to find the app I want,so I'm going to build it.
+My main reason for trying to learn to code is that I have an idea for an app I want to build for myself. It's a budget that works for bi-weekly paychecks. I've seen a few of these online, and tried to use them, but I find I'm always stringing a bunch of hacks together to work with the main app. I've yet to find the app I want,so I'm going to build it.
 
-So I'm leaving Python for a little and switching to JavaScript. Specifically, I'm going to learn Vue & React Native. Why Vue? I heard it was a bit easier to grasp than React, and I found a tutorial that creates a budget app with Vue. Figure it's a great intro to what I'm trying to do.
+I'm leaving Python for a little and switching to JavaScript. Specifically, I'm going to learn Vue & React Native. Why Vue? I heard it was a bit easier to grasp than React, and I found a tutorial that creates a budget app with Vue. Figure it's a great intro to what I'm trying to do.
 
 Here we go!
