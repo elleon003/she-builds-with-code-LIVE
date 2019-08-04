@@ -18,7 +18,7 @@ So I was a little frustrated at this point....
 
 <img style="max-height:40rem;" class="img-fluid d-block mx-auto mb-3" src="{static}/images/woman-biting-pencil-computer.jpg" alt="Woman biting a pencil in front of a computer">
 
-But I began to realize something - part of my confusion with my resources was rooted in just understanding the base code I was looking at. I'd tried learning JavaScript early in my coding education, but I just didn't take to it and ended up with Python. 
+But I began to realize something - part of my confusion with my resources was rooted in just understanding the base code I was looking at. I'd tried learning JavaScript early in my coding education, but I just didn't take to it and ended up with Python.
 
 I realize now, however, that JavaScript is unavoidable for what I want to do, so it's important to me to learn the language and all it's nuances before diving into a framework. Having the experience I now have with Python and building a few things, I feel I can get a better grip diving back into the basics.
 
