@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+
+<head>
+      <title>She Builds With Code - Live From My Linux Half!</title>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="The online experiment of a web developer in training. Learning to code and sharing all the mistakes!">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- ALL CSS (Edit in settings) -->
+    <link rel="stylesheet" href="/theme/CSS/custom.css" />
+
+	  <!-- FONT AWESOME -->
+	  <script src="https://kit.fontawesome.com/7a5f159d5d.js"></script>
+
+      <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="She Builds With Code Full Atom Feed" />
+
+
+    <!-- MATOMO TRACKING -->
+    <script type="text/javascript">
+      var _paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+        var u = "//shebuildswithcode.com/follow/";
+        _paq.push(['setTrackerUrl', u + 'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+
+
+
+
+
+</head>
+
+<body id="index" class="home d-flex flex-column h-100">
+  <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-primary">
+		<a class="navbar-brand" id="top" href="/"><em>She <span class="text-success">Builds</span> With Code</em></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/">Home</a>
+            <a class="nav-item nav-link" href="/about.html">About</a>
+            <a class="nav-item nav-link" href="/contact-me.html">Contact Me</a>
+      </div>
+    </div>
+  </nav><!-- /#menu -->
+
+
+<section id="content" class="body">
+  <header>
+    <div class="jumbotron">
+      <h1 class="entry-title display-4">
+      <a href="/blog/live-from-my-linux-half.html" rel="bookmark"
+        title="Permalink to Live From My Linux Half!">Live From My Linux Half!</a></h1>
+      <p class="lead mb-0">Finally took the plunge into dual boot</p>
+      <em><small class="post-info mt-n2"><time class="published" datetime="2019-07-31 00:00:00-04:00">
+      July 31, 2019
+      </time></small></em>
+    </div>
+  </header>
+
+
+  <div class="entry-content">
+    <div class="container pb-4">
+    <p>Since beginning this leg of my coding education, I decided early on to try and develop on Linux. I have a fairly fast machine (Acer Nitro Spin) that hosts an SSD as well as a 1TB HDD as it's intended to be a lower cost gaming machine. Because it was fast, I decided to try working on a virtual machine.</p>
+<p>Using Virtualbox and the latest version of Ubuntu, I built myself a basic linux virtual desktop that ran decently on my laptop. And until recently, I was happy to work on it. It ran on the SSD, so it was running fast enough to feel like a real machine.</p>
+<p>But it wasn't without it's issues. Video playback was severely stalled, and audio was inconsistent. If I wanted to watch a quick tutorial video, I'd have to launch a browser and go back and forth between my virtual machine and my actual operating system. It would also occasionally lag, specifically with VS Code.</p>
+<p>Finally I realized that I really didn't want to go back to coding in Windows, and decided to take the plunge and install a dual boot situation on my computer.</p>
+<p>Now I've been someone that has loved to peek under the hood of (and often break) my computers. I take them apart, find software and hardware tweaks, and have more often than not learned what to do by doing it wrong many times over. Took 3 total losses to properly learn how to back up my computer! Anyway, it had been a while since I had a computer project, so I was very excited to take the plunge. </p>
+<p>Annnnnd.....the end result was it worked! I am proudly typing this message on a fully functioning installation of Ubuntu on my computer!</p>
+<p>But to get there.....man that was a journey!</p>
+<p>First off, I started following <a href="https://itsfoss.com/install-ubuntu-1404-dual-boot-mode-windows-8-81-uefi/">this tutorial</a> to start the process. And side note, this whole site is just amazing. Truly a lifesaver in this whole process.</p>
+<p>Anyway, part way through installation, I got a little cocky and went to brag to my husband about what I was doing. (He humors my nerd code rants). But when I came back, my computer screen was black, the flash drive that held the ISO for Ubuntu was flashing like mad, and I couldn't access anything.</p>
+<p><img style="max-height:40rem;" class="img-fluid d-block mx-auto mb-3" src="/images/Computer-Angry-User-Internet-Unhappy-Frustration.png" alt="Unhappy Computer User"></p>
+<p>DAMNIT!!!</p>
+<p>I let it go for 30 minutes before finally doing a hard restart on the computer. I started up with my fingers crossed, and it started! And I even had GRUB, the linux boot menu there to pick my operating system.</p>
+<p>But, I couldn't log into the linux side of things. It kept cycling. So I did another hard restart, and debated what to do - delete and start over, or see if I could just re-install over the errors. I opted for choice two. That was the wrong choice. While the new installation did work, it did not allow me to shut down on the linux side. It just gave me a black screen with really scary messages of the CPU being frozen. Yet another hard restart.</p>
+<p>Then I had to figure out how to start back from zero properly. That required several tutorials, a few videos, and a couple of Stack Overflow posts to get it all done. Again, <a href="https://itsfoss.com/uninstall-ubuntu-linux-windows-dual-boot/">It's FOSS</a> was a lifesaver.</p>
+<p>Finally, I got it working! I set everything up, installed my programs, downloaded by backed up sites...but I couldn't get any of my Python virtual environments to work. I had assumed, since they're virtual, that copying and pasting the folder and files should be ready to work. It wasn't. And I'm honestly not completely clear on why it didn't work. Finally, I just deleted the Venv folder, and re-installed it, along with a new installation of Pelican.</p>
+<p>And now I'm back online! It was, at times, very frustrating, but I'm really glad I did it. Running Linux directly on my computer is so much faster, I have better access to my hardware, and honestly I just feel like a badass!</p>
+      <div class="category">
+        Category: <a href="/category/web-development.html">Web Development</a>
+      </div>
+  </div><!-- /.entry-content -->
+</section>
+<aside class="mx-auto my-3">
+	<h4 class="text-center">Keep up with the progress! Sign up for updates below.</h4>
+	<!-- Begin Mailchimp Signup Form -->
+  <div id="mc_embed_signup">
+    <form class="form-inline d-flex justify-content-center" action="https://shebuildswithcode.us10.list-manage.com/subscribe/post?u=dd5d34af47663b2b09922e544&amp;id=57d68f5c5b"method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+      novalidate>
+      <div class="form-row id=" mc_embed_signup_scroll">
+        <label class="sr-only" for="mce-FNAME">Name</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="mce-FNAME" value="" name="FNAME"
+          placeholder="First Name">
+        <label class="sr-only" for="mce-EMAIL">Email</label>
+        <input type="email" class="form-control mb-2 mr-sm-2 required email" id="mce-EMAIL" name="EMAIL"
+          placeholder="Email">
+      </div>
+      <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+          name="b_dd5d34af47663b2b09922e544_57d68f5c5b" tabindex="-1" value=""></div>
+      <div class="clear">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+          class="btn btn-success mb-2">
+      </div>
+    </form>
+  </div>
+  <!--End mc_embed_signup-->
+</aside>
+
+  <footer id="contentinfo" class="body footer mt-auto py-2 bg-dark">
+    <div class="container">
+			<p class="m-0 text-center text-white">Copyright &copy; <a href="/">She Builds With Code</a> 2019</p>
+			<p class="text-center"><a href="https://www.freeprivacypolicy.com/privacy/view/2efd88d8b85b89da25a70509232a12e3" target="_blank">Privacy Policy</a></p>
+		</div>
+  </footer><!-- /#contentinfo -->
+  <!-- BOOTSTRAP JAVASCRIPT -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
