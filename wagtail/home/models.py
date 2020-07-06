@@ -5,6 +5,8 @@ from wagtail.admin.edit_handlers import FieldPanel
 
 
 class HomePage(Page):
+    max_count = 1
+
     intro = models.CharField(
         max_length=140,
         blank=True,

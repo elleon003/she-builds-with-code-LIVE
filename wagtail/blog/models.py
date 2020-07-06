@@ -12,7 +12,7 @@ class BlogListingPage(Page):
 
     def get_context(self, request, *args, **kwargs):
         context = super().get_context(request)
-        posts = BlogPost.objects.live().order_by('-publication_date')
+        posts = BlogPost.objects.live().order_by('-first_published_at')
 
         context["posts"] = posts
         return context

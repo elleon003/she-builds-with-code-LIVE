@@ -1,0 +1,43 @@
+@import url("bootstrap.min.css");
+@import url("style-404.css");
+
+
+/* NAVIGATION */
+.navbar-brand {
+    font-size: 1.55em;
+}
+
+.nav-link {
+    font-size: 1.15em;
+}
+
+
+/* BOOTSTRAP OVERRIDES */
+p {
+    font-size: 1.15rem;
+}
+
+.btn-success {
+    color:#000;
+}
+
+label {
+    margin-bottom:0;
+    margin-top:0.5rem;
+}
+
+fieldset {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* HOME PAGE */
+.blog-blurb {
+    width: 18rem;
+    height: 36rem;
+}
+
+/* CONTACT */
+#message {
+    height:12rem;
+}
