@@ -41,3 +41,14 @@ fieldset {
 #message {
     height:12rem;
 }
+
+/* LOGIN FORM */
+@media (max-width: 600px) {
+    #login-form {
+        width: 85%;
+    }
+}
+
+#login-form {
+    width: 65%;
+}

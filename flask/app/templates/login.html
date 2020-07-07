@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container">
+    <h1 class="display-4 text-center">Login</h1>
+    <form class="mx-auto" id="login-form" action="" method="POST">
+      {{ form.hidden_tag() }}
+      <div class="form-group">
+        {{ form.username.label }}
+        {{ form.username(class_="form-control")}}
+        {% for error in form.username.errors %}
+          <span style="color:white;">[{{ error }}]</span>
+        {% endfor %}
+      </div>
+      <div class="form-group">
+        {{ form.password.label }}
+        {{ form.password(class_="form-control") }}
+        {% for error in form.password.errors %}
+        <span style="color:white;">[{{ error }}]</span>
+        {% endfor %}
+      </div>
+      <div class="form-group form-check">
+        {{ form.remember_me(class_="form-check-input") }}
+        {{ form.remember_me.label }}
+      </div>
+      {{ form.submit(class_="btn btn-success") }}
+    </form>
+  </div>
+{% endblock %}

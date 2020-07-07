@@ -17,6 +17,15 @@
   {% include "includes/header.html" %}
 
   <main id="content" class="pb-3 flex-grow-1" role="main">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+          {% for message in messages %}
+          <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
     {% block content %}{% endblock %}
   </main>
 
