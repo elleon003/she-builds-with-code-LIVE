@@ -17,6 +17,7 @@
   {% include "includes/header.html" %}
 
   <main id="content" class="pb-3 flex-grow-1" role="main">
+    {% block admin %}{% endblock %}
     {% with messages = get_flashed_messages() %}
       {% if messages %}
         <ul>

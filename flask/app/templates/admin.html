@@ -1,42 +1,19 @@
-{% extends 'base.html' %}
+{% extends 'admin-base.html' %}
 
 {% block content %}
-<div class="container pt-3"> 
-  <h1>Hi, {{ current_user.username|capitalize }}!</h1>
-</div>
-<div class="container py-3">
-  <h2 class="text-center">Add a New User</h2>
-  <form class="mx-auto" action="" method="POST">
-    {{ form.hidden_tag() }}
-    <div class="form-group">
-      {{ form.username.label }}
-      {{ form.username(class_="form-control")}}
-      {% for error in form.username.errors %}
-      <span style="color:white;">[{{ error }}]</span>
-      {% endfor %}
-    </div>
-    <div class="form-group">
-      {{ form.email.label }}
-      {{ form.email(class_="form-control") }}
-      {% for error in form.email.errors %}
-      <span style="color:white;">[{{ error }}]</span>
-      {% endfor %}
-    </div>
-    <div class="form-group">
-      {{ form.password.label }}
-      {{ form.password(class_="form-control") }}
-      {% for error in form.password.errors %}
-      <span style="color:white;">[{{ error }}]</span>
-      {% endfor %}
-    </div>
-    <div class="form-group">
-      {{ form.password2.label }}
-      {{ form.password2(class_="form-control") }}
-      {% for error in form.password2.errors %}
-      <span style="color:white;">[{{ error }}]</span>
-      {% endfor %}
-    </div>
-    {{ form.submit(class_="btn btn-success") }}
-  </form>
-</div>
+  <div class="container pt-3"> 
+    <h1>Hi, {{ user|capitalize }}!</h1>
+    {% if user.last_seen %}
+      <small>Last login: {{ user.last_login }}</small>
+    {% endif %}
+    <!-- @TODO FIX THIS LATER -->
+    {# <img src="{{ user.avatar(128)}}" class="img-fluid"> #}
+  </div>
+  <div class="container pt-3">
+    <h2>Recent Posts: </h2>
+    {% for post in posts %}
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.subtitle }}</p>
+    {% endfor %}
+  </div>
 {% endblock %}

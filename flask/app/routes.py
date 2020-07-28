@@ -53,6 +53,34 @@ def logout():
 @app.route('/admin', methods=['GET', 'POST'])
 @login_required
 def admin():
+    user = current_user.username
+    posts = [
+        {
+            'title': 'Post 1',
+            'subtitle': 'This is the content of post 1.'
+        },
+        {
+            'title': 'Post 2',
+            'subtitle': 'This is the content of post 2.'
+        },
+        {
+            'title': 'Post 3',
+            'subtitle': 'This is the content of post 3.'
+        },
+    ]
+    return render_template('admin.html', posts=posts, user=user)
+
+
+@app.before_request
+def before_request():
+    if current_user.is_authenticated:
+        current_user.last_login == datetime.utcnow()
+        db.session.commit()
+
+
+@app.route('/admin/new-user', methods=['GET', 'POST'])
+@login_required
+def newUser():
     form = AddUserForm()
     if form.validate_on_submit():
         user = User(username=form.username.data, email=form.email.data)
@@ -60,4 +88,4 @@ def admin():
         db.session.add(user)
         db.session.commit()
         flash("You've added a new user!")
-    return render_template('admin.html', form=form)
+    return render_template('new-user.html', form=form)
